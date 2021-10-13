@@ -148,7 +148,7 @@ current.games <- function (rdata.folder="nhlr-data") {
 
 download.single.game <- function (season=20122013, gcode=20001, rdata.folder="nhlr-data", verbose=TRUE, wait=20) {
     ##season="20122013"; gcode="20018"; rdata.folder="nhlr-data"; verbose=TRUE
-    valid.seasons <- seq(20022003, 20202021, by=10001)[-3]
+    valid.seasons <- seq(20022003, 20282029, by=10001)[-3]
     if (!(season %in% valid.seasons)) stop(paste("Invalid season: ",season))
     
     if (verbose) message(paste("Downloading files for game", season, gcode))
